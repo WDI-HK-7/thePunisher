@@ -1,24 +1,33 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>The Punish3r Generator</title>
+var punishments = [];
+var crazy;
 
-  <script src="punisher.js"></script>
-</head>
-<body>
-  <input type="text" placeholder="Your name" id="name">
+punishments.push("Thou Shall refer to us Thy majesty");
+punishments.push("20 Pushups (except for xiao: 20 with someone else on top)");
+punishments.push("Bring coffee/beverages to everyone");
+punishments.push("Sing a song");
 
-  <button onclick=" punish();  ">
-    PUNISH!
-  </button>
+function punish() {
+  var randomPunishment = Math.floor(Math.random() * punishments.length);
+  var punishment = punishments[randomPunishment];
 
-  <button onclick=" raveWDI();  ">
-    RAVE!!
-  </button>
+  var name = document.getElementById('name').value ;
 
-  <h2 id="punishment-salutation">The Punisher &trade;</h2>
-  <h3 id="punishment"></h3>
+  var salutation = document.getElementById('punishment-salutation')
+  salutation.innerText = "Hi " + name + "!!" + " Ready to be punished?"
 
-</body>
-</html>
+  document.getElementById('punishment').innerHTML = punishment;
+}
+
+function crazyBackground() {
+  var colors = ["green", "red", "blue"];
+  var randomNumber = Math.floor(Math.random() * colors.length);
+
+  document.bgColor = colors[randomNumber];
+}
+
+function raveWDI() {
+  crazy = setInterval(crazyBackground, 200);
+}
+
+// to Stop the RAVE, pls clear the interval timer
+// clearInterval(crazy);
