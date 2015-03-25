@@ -7,7 +7,25 @@
   <script src="thePunisher.js"></script>
 </head>
 <body>
-  <input type="text" placeholder="Your name" id="name">
+
+<!-- Removed input and added a form select input to include a choice of all class names -->
+  <form>
+    <select size="12" id="name">
+      <option>Fer</option>
+      <option>Harry</option>
+      <option>Dimple</option>
+      <option>Yang</option>
+      <option>Xiao</option>
+      <option>Xavi</option>
+      <option>Mia</option>
+      <option>Elia</option>
+      <option>Wilson</option>
+      <option>Michael</option>
+      <option>Ken</option>
+      <option>Dom</option>
+      <option>Victoria</option>
+    </select>
+  </form>
 
   <button onclick=" punish();  ">
     PUNISH!
@@ -15,6 +33,11 @@
 
   <button onclick=" raveWDI();  ">
     RAVE!!
+  </button>
+
+<!-- Button to stop Rave functions which may become too intense! -->
+  <button onclick=" stopRaveWDI();  ">
+    Maybe stop Raving now...
   </button>
 
   <h2 id="punishment-salutation">The Punisher &trade;</h2>
