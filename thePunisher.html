@@ -3,22 +3,79 @@
 <head>
   <meta charset="UTF-8">
   <title>The Punish3r Generator</title>
-
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href='http://fonts.googleapis.com/css?family=Special+Elite' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
   <script src="thePunisher.js"></script>
 </head>
-<body>
-  <input type="text" placeholder="Your name" id="name">
+<body id="my-body">
+  <div id="fake-body">
+  
+    <div id="content-wrapper">
 
-  <button onclick=" punish();  ">
-    PUNISH!
-  </button>
+      <div id="tagline">
+        <h1 id="title">THE WDI PUNISHER&trade;</h1>
+      </div>
 
-  <button onclick=" raveWDI();  ">
-    RAVE!!
-  </button>
+      <div class="form-box">
+        <h2>Hi there, what's your NAME?</h2>
+        <input type="text" placeholder="Your Name" id="name">
+        <br>
+        <br>
+        <h2>Are You Ready To Be Punished?</h2>
+        
+        <div id="button-wrapper">
+          <button class="punish-me" id="yes" onclick="punishReady();">
+            Yes
+          </button>
 
-  <h2 id="punishment-salutation">The Punisher &trade;</h2>
-  <h3 id="punishment"></h3>
+          <button class="punish-me" id="no" onclick="punishNo();">
+            No
+          </button>
 
+          <div class="punishment-wrapper">
+            <h1 id="punishment-salutation"></h1>
+            <h1 id="punishment"></h1>
+
+            <div class="reset-wrapper">
+              <button id="reset" onclick="reset()">
+              RESET
+              </button>
+            </div>
+
+           <br>
+            <button id="dance-menu" onclick="showDanceMenu()">
+              Show Rave Menu
+            </button>
+            <button id="hide-rave" onclick="hideDanceMenu()">
+              Hide Rave Menu
+            </button>
+            <!-- <br>
+            <button class="punish-me" id="no" onclick="toggleMenu();">
+              Toggle
+            </button>
+ -->          </div>
+        </div>
+
+        <br> 
+        <div id="dance-menu-bar">
+          <h2>Choose A Mode Rave To:</h2>
+          <button onclick="mildraveWDI()">
+            MILD RAVE
+          </button>
+
+          <button onclick="modraveWDI();">
+            MODERATE RAVE
+          </button>
+
+          <button onclick="crayraveWDI();">
+            GO CRAY CRAY
+          </button>
+          <br>
+          <br>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
