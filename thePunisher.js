@@ -18,6 +18,17 @@ function punish() {
   document.getElementById('punishment').innerHTML = punishment;
 }
 
+var score = []
+var sum = 0
+
+function avgScore(score) {
+  var eval = score[document.getElementById('score').value];
+  for ( var = i; i < score.length; i ++ ) {
+    sum = score[i] // how to write the function??  
+  }
+  // average score = sum of scores in array/ score.length ??? 
+}
+
 function crazyBackground() {
   var colors = ["green", "red", "blue"];
   var randomNumber = Math.floor(Math.random() * colors.length);
