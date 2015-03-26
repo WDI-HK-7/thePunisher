@@ -1,0 +1,27 @@
+#media2, #media5, #media8 {
+	width: 100px;
+	height: 100px;
+	margin: 300px 200px;
+	padding: 50px;
+}
+
+#media1, #media3, #media4 {
+	width: 100px;
+	height: 100px;
+	margin: 100px 400px;
+	padding: 75px;
+}
+
+#media6, #media7 {
+	width: 100px;
+	height: 100px;
+	margin: 600px 800px;
+	padding: 75px;
+}
+h3 {
+	font-size:80px;
+	padding-bottom: -300px;
+}
+body {
+	font-family: "Comic Sans MS";
+}
