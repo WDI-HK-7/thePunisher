@@ -1,0 +1,261 @@
+.hidden {
+  display: none;
+}
+/*large peanut dancing in middle*/
+keyframes slideDown{
+  5% {width: 50px;}
+  10% {width: 100px;}
+  15% {left: 25%; width: 200px;}
+  20% {top: 25%; left: 40%; width: 300px;}
+  30% {width: 400px;}
+  40% {left: 60%;width: 300px;}
+  50% {width: 500px;}
+  55% {left: 45%;width: 350px;}
+  60% {width: 300px;}
+  65% {left: 20%;width: 500px;}
+  70% {width: 400px;}
+  80% {left: 60%;width: 500px;}
+  90% {width: 400px;}
+  100% {top: 25%; left: 40%; width: 300px;}
+}
+@-webkit-keyframes slideDown {
+  5% {width: 50px;}
+  10% {width: 100px;}
+  15% {left: 25%; width: 200px;}
+  20% {top: 25%; left: 40%; width: 300px;}
+  30% {width: 400px;}
+  40% {left: 60%;width: 300px;}
+  50% {width: 500px;}
+  55% {left: 45%;width: 350px;}
+  60% {width: 300px;}
+  65% {left: 20%;width: 500px;}
+  70% {width: 400px;}
+  80% {left: 60%;width: 500px;}
+  90% {width: 400px;}
+  100% {top: 25%; left: 40%; width: 300px;}
+}
+@-moz-keyframes slideDown {
+  5% {width: 50px;}
+  10% {width: 100px;}
+  15% {left: 25%; width: 200px;}
+  20% {top: 25%; left: 40%; width: 300px;}
+  30% {width: 400px;}
+  40% {left: 60%;width: 300px;}
+  50% {width: 500px;}
+  55% {left: 45%;width: 350px;}
+  60% {width: 300px;}
+  65% {left: 20%;width: 500px;}
+  70% {width: 400px;}
+  80% {left: 60%;width: 500px;}
+  90% {width: 400px;}
+  100% {top: 25%; left: 40%; width: 300px;}
+}
+
+.peanut {
+  animation: slideDown 28s 1s infinite alternate;
+  -webkit-animation: slideDown 28s 1s infinite alternate;
+  -moz-animation: slideDown 28s 1s infinite alternate;
+  display: inherit;
+  position: fixed;
+  left: 50%;
+  top: -80px;
+}
+/*end of large peanut*/
+
+/*top peanuts sliding left to right
+keyfreames set the animations and individual calsses
+set animation duration and call the keyframes*/
+@keyframes slideRight {
+  30%  {top: 10%;}
+  80%  {top: 13%;}
+  100% {left: 110%; top: 15%;}
+}
+@-webkit-keyframes slideRight {
+  30%  {top: 10%;}
+  80%  {top: 13%;}
+  100% {left: 110%; top: 15%;}
+}
+@-moz-keyframes slideRight {
+  30%  {top: 10%;}
+  80%  {top: 13%;}
+  100% {left: 110%; top: 15%;}
+}
+.top-dance {
+  top: 15%;
+  position: fixed;
+  display: inherit;
+}
+.t1 {
+  animation: slideRight 20s 0s ease infinite alternate;
+  -webkit-animation: slideRight 20s 0s ease infinite alternate;
+  -moz-animation: slideRight 20s 0s ease infinite alternate;
+  left: -100px;
+}
+.t2 {
+  left: -100px;
+  animation: slideRight 21s 1s ease infinite alternate;
+  -moz-animation: slideRight 21s 1s ease infinite alternate;
+  -webkit-animation: slideRight 21s 1s ease infinite alternate;
+}
+.t3 {
+  left: -100px;
+  animation: slideRight 22s 2s ease infinite alternate;
+  -moz-animation: slideRight 22s 2s ease infinite alternate;
+  -webkit-animation: slideRight 22s 2s ease infinite alternate;
+}
+.t4 {
+  left: -100px;
+  animation: slideRight 23s 3s ease infinite alternate;
+  -moz-animation: slideRight 23s 3s ease infinite alternate;
+  -webkit-animation: slideRight 23s 3s ease infinite alternate;
+}
+.t5 {
+  left: -100px;
+  animation: slideRight 24s 4s ease infinite alternate;
+  -moz-animation: slideRight 24s 4s ease infinite alternate;
+  -webkit-animation: slideRight 24s 4s ease infinite alternate;
+}
+.t6 {
+  left: -100px;
+  animation: slideRight 25s 5s ease infinite alternate;
+  -moz-animation: slideRight 25s 5s ease infinite alternate;
+  -webkit-animation: slideRight 25s 5s ease infinite alternate;
+}
+.t7 {
+  left: -100px;
+  animation: slideRight 26s 6s ease infinite alternate;
+  -moz-animation: slideRight 26s 6s ease infinite alternate;
+  -webkit-animation: slideRight 26s 6s ease infinite alternate;
+}
+.t8 {
+  left: -100px;
+  animation: slideRight 27s 7s ease infinite alternate;
+  -moz-animation: slideRight 27s 7s ease infinite alternate;
+  -webkit-animation: slideRight 27s 7s ease infinite alternate;
+}
+.t9 {
+  left: -100px;
+  animation: slideRight 28s 8s ease infinite alternate;
+  -moz-animation: slideRight 28s 8s ease infinite alternate;
+  -webkit-animation: slideRight 28s 8s ease infinite alternate;
+}
+.t10 {
+  left: -100px;
+  animation: slideRight 29s 9s ease infinite alternate;
+  -moz-animation: slideRight 29s 9s ease infinite alternate;
+  -webkit-animation: slideRight 29s 9s ease infinite alternate;
+}
+/*end of top peanuts*/
+
+/*bottom peanuts sliding right to left
+keyfreames set the animations and individual calsses
+set animation duration and call the keyframes*/
+@keyframes slideLeft {
+  30%  {top: 65%}
+  80%  {top: 62%;}
+  100% {left: -10%;}
+}
+@-webkit-keyframes slideLeft {
+  30%  {top: 65%}
+  80%  {top: 62%;}
+  100% {left: -10%;}
+}
+@-moz-keyframes slideLeft {
+  30%  {top: 65%}
+  80%  {top: 62%;}
+  100% {left: -10%;}
+}
+.bot-dance {
+  display: inherit;
+  top: 60%;
+  position: fixed;
+}
+.b1 {
+  -webkit-animation: slideLeft 20s 0s ease infinite alternate;
+  animation: slideLeft 20s 0s ease infinite alternate;
+  -moz-animation: slideLeft 20s 0s ease infinite alternate;
+  left: 110%;
+}
+.b2 {
+  left: 110%;
+  animation: slideLeft 21s 1s ease infinite alternate;
+  -moz-animation: slideLeft 21s 1s ease infinite alternate;
+  -webkit-animation: slideLeft 21s 1s ease infinite alternate;
+}
+.b3 {
+  left: 110%;
+  animation: slideLeft 22s 2s ease infinite alternate;
+  -moz-animation: slideLeft 22s 2s ease infinite alternate;
+  -webkit-animation: slideLeft 22s 2s ease infinite alternate;
+}
+.b4 {
+  left: 110%;
+  animation: slideLeft 23s 3s ease infinite alternate;
+  -moz-animation: slideLeft 23s 3s ease infinite alternate;
+  -webkit-animation: slideLeft 23s 3s ease infinite alternate;
+}
+.b5 {
+  left: 110%;
+  animation: slideLeft 24s 4s ease infinite alternate;
+  -moz-animation: slideLeft 24s 4s ease infinite alternate;
+  -webkit-animation: slideLeft 24s 4s ease infinite alternate;
+}
+.b6 {
+  left: 110%;
+  animation: slideLeft 25s 5s ease infinite alternate;
+  -moz-animation: slideLeft 25s 5s ease infinite alternate;
+  -webkit-animation: slideLeft 25s 5s ease infinite alternate;
+}
+.b7 {
+  left: 110%;
+  animation: slideLeft 26s 6s ease infinite alternate;
+  -moz-animation: slideLeft 26s 6s ease infinite alternate;
+  -webkit-animation: slideLeft 26s 6s ease infinite alternate;
+}
+.b8 {
+  left: 110%;
+  animation: slideLeft 27s 7s ease infinite alternate;
+  -moz-animation: slideLeft 27s 7s ease infinite alternate;
+  -webkit-animation: slideLeft 27s 7s ease infinite alternate;
+}
+.b9 {
+  left: 110%;
+  animation: slideLeft 28s 8s ease infinite alternate;
+  -moz-animation: slideLeft 28s 8s ease infinite alternate;
+  -webkit-animation: slideLeft 28s 8s ease infinite alternate;
+}
+.b10 {
+  left: 110%;
+  animation: slideLeft 29s 9s ease infinite alternate;
+  -moz-animation: slideLeft 29s 9s ease infinite alternate;
+  -webkit-animation: slideLeft 29s 9s ease infinite alternate;
+}
+
+/*fork the repo animation*/
+@keyframes fork {
+  0%   {top: -300px; left: 100%}
+  100% {top: 7%; left: 50%;}
+}
+@-webkit-keyframes fork {
+  0%   {top: -300px; left: 100%}
+  100% {top: 7%; left: 50%;}
+}
+@-moz-keyframes fork {
+  0%   {top: -300px; left: 100%}
+  100% {top: 7%; left: 50%;}
+}
+
+.repo {
+  position: fixed;
+  top: 30%;
+  left: 30%;
+  display: inherit;
+}
+
+.fork {
+  -webkit-animation: fork 10s 0s ease infinite alternate;
+  animation: fork 5s 0s ease infinite alternate;
+  -moz-animation: fork 10s 0s ease infinite alternate;
+  position: fixed;
+  display: inherit;
+}
