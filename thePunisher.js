@@ -57,5 +57,10 @@ function peanutButterJellyTime() {
   document.getElementById(('b10')).className += (" bot-dance b10");
 }
 
+function forkTheRepo() {
+  document.getElementById('fork').className += " fork";
+  document.getElementById('repo').className += " repo";
+}
+
 // to Stop the RAVE, pls clear the interval timer
 // clearInterval(crazy);

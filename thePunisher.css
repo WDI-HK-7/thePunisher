@@ -1,7 +1,7 @@
 .hidden {
   display: none;
 }
-large peanut dancing in middle*/
+/*large peanut dancing in middle*/
 keyframes slideDown{
   5% {width: 50px;}
   10% {width: 100px;}
@@ -229,4 +229,33 @@ set animation duration and call the keyframes*/
   animation: slideLeft 29s 9s ease infinite alternate;
   -moz-animation: slideLeft 29s 9s ease infinite alternate;
   -webkit-animation: slideLeft 29s 9s ease infinite alternate;
+}
+
+/*fork the repo animation*/
+@keyframes fork {
+  0%   {top: -300px; left: 100%}
+  100% {top: 7%; left: 50%;}
+}
+@-webkit-keyframes fork {
+  0%   {top: -300px; left: 100%}
+  100% {top: 7%; left: 50%;}
+}
+@-moz-keyframes fork {
+  0%   {top: -300px; left: 100%}
+  100% {top: 7%; left: 50%;}
+}
+
+.repo {
+  position: fixed;
+  top: 30%;
+  left: 30%;
+  display: inherit;
+}
+
+.fork {
+  -webkit-animation: fork 10s 0s ease infinite alternate;
+  animation: fork 5s 0s ease infinite alternate;
+  -moz-animation: fork 10s 0s ease infinite alternate;
+  position: fixed;
+  display: inherit;
 }
