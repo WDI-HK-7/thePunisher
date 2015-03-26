@@ -3,22 +3,36 @@
 <head>
   <meta charset="UTF-8">
   <title>The Punish3r Generator</title>
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <style type="text/css">
+
+  </style>
 
   <script src="thePunisher.js"></script>
 </head>
 <body>
-  <input type="text" placeholder="Your name" id="name">
+  <div class="container"><center>
+    <input type="text" placeholder="Your name" id="name">
 
-  <button onclick=" punish();  ">
-    PUNISH!
-  </button>
+    <button onclick=" punish();  ">
+      PUNISH!
+    </button>
 
-  <button onclick=" raveWDI();  ">
-    RAVE!!
-  </button>
+    <button onclick=" raveWDI();  ">
+      RAVE!!
+    </button>
 
-  <h2 id="punishment-salutation">The Punisher &trade;</h2>
-  <h3 id="punishment"></h3>
+    <h2 id="punishment-salutation"><i class="fa fa-camera-retro fa-5x"></i>The Punisher &trade;</h2>
+    <h3 id="punishment"></h3>
 
+    <select id= "pickSong">
+      <option>Choose a Song</option>
+      <option>"Happy_Pharell Williams"</option>
+      <option>"R.E.S.P.E.C.T_Aretha Franklin"</option>
+      <option>"I Will Always Love You_Whitney Houston"</option>
+      <option>"Anything by Backstreet Boys"</option>
+    </select>
+    </center>
+  </div>
 </body>
 </html>
