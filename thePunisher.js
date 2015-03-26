@@ -18,16 +18,46 @@ function punish() {
   document.getElementById('punishment').innerHTML = punishment;
 }
 
-function crazyBackground() {
-  var colors = ["green", "red", "blue"];
-  var randomNumber = Math.floor(Math.random() * colors.length);
 
-  document.bgColor = colors[randomNumber];
-}
+// function pickSong() {
+//     if (punishment === punishments[3]) {
+//     console.log (punishment + "Oh Yeah, lets pick one");
+//     }
+
+//     var chooseSong = document.getElementsById('pickSong');
+// } 
+
+function pickSong() {
+    if (punishment === punishments[3]) {
+    return punishment;
+    
+    }
+
+    var chooseSong = document.getElementsById('pickSong');
+    console.log (punishment + "Oh Yeah, lets pick one");
+} 
 
 function raveWDI() {
   crazy = setInterval(crazyBackground, 200);
 }
 
 // to Stop the RAVE, pls clear the interval timer
-// clearInterval(crazy);
+// clearInterval(crazy)
+
+// function pickSong() {
+//     if (punishment === punishments[3]) {
+//     console.log (punishment + "Oh Yeah, lets pick one");
+//     }
+
+//     var chooseSong = document.getElementsById('pickSong');
+// } 
+
+function pickSong() {
+    if (punishment === punishments[3]) {
+    return punishment;
+
+    }
+
+    var chooseSong = document.getElementsById('pickSong');
+    console.log (punishment + "Oh Yeah, lets pick one");
+} 
