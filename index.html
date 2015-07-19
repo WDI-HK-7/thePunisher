@@ -5,10 +5,13 @@
   <title>The Punish3r Generator</title>
 
   <script src="thePunisher.js"></script>
+
   <link rel="stylesheet" type="text/css" href="thePunisher.css">
 </head>
+
 <body>
   <input type="text" placeholder="Your name" id="name">
+  <input type="number" placeholder="# of tardies" id="numberTardies" value="1">
 
   <button onclick=" punish();  ">
     PUNISH!
@@ -17,6 +20,17 @@
   <button onclick=" raveWDI();  ">
     RAVE!!
   </button>
+
+
+  <h2 id="punishment-salutation">The Punisher &trade;</h2>
+  <h3 id="punishment"></h3>
+  <h3 id="additional-punishment"></h3>
+  <button onclick=" hairColour();">
+  Get Colour
+  </button>
+  <h4> This get colour button should only show up when tardies is more than or equals 5..... I tried to hide it but am running out of time. </h4>
+  <h4 id="dye-hair-colour"></h4>
+
   <!-- Peanut Butter Jelly Time button calls the function with same name when clicked -->
   <!-- This will start the dancing animation -->
   <button onclick=" peanutButterJellyTime();  ">
@@ -61,6 +75,5 @@
 
   <h2 id="punishment-salutation">The Punisher &trade;</h2>
   <h3 id="punishment"></h3>
-
 </body>
 </html>
